@@ -10,5 +10,4 @@ Before running video_car_detector.py make sure that:
 
 In the video detection, it is possible to stop the program while running by pressing 'q' and getting a partial video as output.
 
-Link for downloading yolov3.weights: 
-https://pjreddie.com/media/files/yolov3.weights
+For the weights file run weightsFile_download.py (the process might take a while...)
