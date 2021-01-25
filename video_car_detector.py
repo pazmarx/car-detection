@@ -8,6 +8,7 @@ OUTPUT_FILE = 'out/output.avi'
 LABELS_FILE = 'data/coco.names'
 CONFIG_FILE = 'cfg/yolov3.cfg'
 WEIGHTS_FILE = 'yolov3.weights'
+JSONS_FOLDER = 'out/jsons'
 CONFIDENCE_THRESHOLD = 0.7
 
 H = None
@@ -103,7 +104,7 @@ while True:
 
             cv2.rectangle(image, (x, y), (x + w, y + h), color, 2)
     # extract results to json file
-    with open("out/jsons/frame_"+str(cnt)+"_boxes.json", 'w') as json_file:
+    with open(JSONS_FOLDER+"/frame_"+str(cnt)+"_boxes.json", 'w') as json_file:
         json.dump(jsonDict, json_file)
     # show the output image
     cv2.imshow("output", cv2.resize(image, (800, 600)))

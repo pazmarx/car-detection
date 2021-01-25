@@ -7,6 +7,7 @@ Before running video_car_detector.py make sure that:
     3) LABELS_FILE holds the path to the list of labels
     4) CONFIG_FILE holds the path to the configuration file ('*.cfg')
     5) WEIGHTS_FILE holds the path to the weights file ('*.weights')
+    6) JSONS_FOLDER holds the folder for the json files output
 
 In the video detection, it is possible to stop the program while running by pressing 'q' and getting a partial video as output.
 
